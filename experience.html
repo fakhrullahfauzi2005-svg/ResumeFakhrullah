@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Muhammad Fakhrullah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<!-- FIXED MARQUEE -->
+<div class="top-marquee fixed-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        Welcome to My Website • Muhammad Fakhrullah • Information Management Student
+    </marquee>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Fakhrullah</div>
+    <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</nav>
+
+<section class="section" style="margin-top:170px;">
+    <h2>Internship <span class="yellow">Organization</span></h2>
+
+    <!-- INTERNSHIP OVERVIEW -->
+    <div class="large-card" style="max-width:900px; margin:auto;">
+
+        <!-- COMPANY IMAGE -->
+<div style="text-align:center; margin-bottom:20px;">
+  <a href="https://jknselangor.moh.gov.my/htar/" target="_blank">
+    <img src="htar.png"
+         alt="Hospital Tengku Ampuan Rahimah"
+         class="htar-logo clickable-logo">
+  </a>
+</div>
+
+
+        <div class="about-text" style="max-width:750px; margin:auto;">
+            <div class="about-text" style="max-width:550px; margin:auto;">
+            <div class="bio-line">Organization:  Hospital Tengku Ampuan Rahimah, Klang</div>
+            <div class="bio-line">Department: Information Technology Unit</div>
+            <div class="bio-line">Internship Period: 28 July – 19 September 2025</div>
+            <div class="bio-line">Duration:  2 Months</div>
+            <div class="bio-line">Position: Internship Trainee (IT Unit)</div>
+        </div>
+    </div>
+        
+        </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <h2 style="margin-top:50px;">Internship <span class="yellow">Experience</span></h2>
+
+    <div class="movie-grid big-grid" style="max-width:1200px; grid-template-columns:repeat(3,1fr);">
+
+        <!-- ACHIEVEMENT 1 -->
+        <div class="movie-card">
+            <div class="slideshow-achievement">
+    <img src="asset1.jpeg" class="ach-slide">
+    <img src="asset2.jpeg" class="ach-slide">
+    <img src="asset3.jpeg" class="ach-slide">
+</div>
+
+            <p><strong>IT Asset & System Records</strong></p>
+            <p style="font-size:14px; color:#ccc;">
+                Managed and updated IT asset records, inventory, and helpdesk system data accurately.
+            </p>
+        </div>
+
+        <!-- ACHIEVEMENT 2 -->
+        <div class="movie-card">
+            <div class="slideshow-achievement">
+    <img src="pc1.jpeg" class="ach-slide">
+    <img src="pc2.jpeg" class="ach-slide">
+    <img src="pc3.jpeg" class="ach-slide">
+</div>
+
+            <p><strong>PC Setup</strong></p>
+            <p style="font-size:14px; color:#ccc;">
+                Installed, configured, tested, and deployed new PCs, and download windows.
+            </p>
+        </div>
+
+        <!-- ACHIEVEMENT 3 -->
+        <div class="movie-card">
+            <div class="slideshow-achievement">
+    <img src="maint1.jpeg" class="ach-slide">
+    <img src="maint2.jpeg" class="ach-slide">
+    <img src="maint3.jpeg" class="ach-slide">
+</div>
+
+            <p><strong>Maintenance & Troubleshooting</strong></p>
+            <p style="font-size:14px; color:#ccc;">
+                Assisted in preventive maintenance, troubleshooting, and hardware inspections with vendors.
+            </p>
+        </div>
+
+        <!-- ACHIEVEMENT 4 -->
+        <div class="movie-card">
+            <div class="slideshow-achievement">
+    <img src="equip1.jpeg" class="ach-slide">
+    <img src="equip2.jpeg" class="ach-slide">
+    <img src="equip3.jpeg" class="ach-slide">
+</div>
+
+            <p><strong>IT Equipment Handling</strong></p>
+            <p style="font-size:14px; color:#ccc;">
+                Handled IT equipment movement, delivery, disposal, labeling, and storage organization.
+            </p>
+        </div>
+
+        <!-- ACHIEVEMENT 5 -->
+        <div class="movie-card">
+            <div class="slideshow-achievement">
+    <img src="net1.jpeg" class="ach-slide">
+    <img src="net2.jpeg" class="ach-slide">
+     <img src="net3.jpeg" class="ach-slide">
+</div>
+
+            <p><strong>Network & Connectivity</strong></p>
+            <p style="font-size:14px; color:#ccc;">
+                Performed network and connectivity checks including LAN cable testing and setup.
+            </p>
+        </div>
+
+        <!-- ACHIEVEMENT 6 -->
+        <div class="movie-card">
+           <div class="slideshow-achievement">
+    <img src="server1.jpeg" class="ach-slide">
+    <img src="server2.jpeg" class="ach-slide">
+    <img src="server3.jpeg" class="ach-slide">
+</div>
+
+            <p><strong>Workspace & Server Room</strong></p>
+            <p style="font-size:14px; color:#ccc;">
+                Organized server room, workspaces, cables, and IT storage areas efficiently.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Muhammad Fakhrullah | Experience</p>
+</footer>
+
+<!-- LIVE TIMER -->
+<div class="live-timer-widget" id="liveTimer"></div>
+
+<script>
+function updateTime() {
+    const now = new Date();
+    const t = now.toLocaleTimeString("en-US", {
+        hour:"numeric", minute:"numeric", second:"numeric", hour12:true
+    });
+    document.getElementById("liveTimer").innerHTML = t;
+}
+setInterval(updateTime, 1000); updateTime();
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll('.slideshow-achievement').forEach(slideshow => {
+        const slides = slideshow.querySelectorAll('.ach-slide');
+        let index = 0;
+
+        if (slides.length === 0) return;
+
+        slides.forEach((img, i) => {
+            img.style.display = i === 0 ? 'block' : 'none';
+        });
+
+        setInterval(() => {
+            slides[index].style.display = 'none';
+            index = (index + 1) % slides.length;
+            slides[index].style.display = 'block';
+        }, 3000);
+    });
+
+});
+</script>
+
+
+</body>
+</html>
