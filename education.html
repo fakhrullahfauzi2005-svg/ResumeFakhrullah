@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Education | Muhammad Fakhrullah</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<body class="page-offset">
+
+<!-- FIXED MARQUEE -->
+<div class="top-marquee fixed-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        Welcome to My Website • Muhammad Fakhrullah • Information Management Student
+    </marquee>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Fakhrullah</div>
+    <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- LIVE TIMER (BOTTOM RIGHT) -->
+<div class="live-timer-widget">
+    <div id="liveTime" class="live-timer-text"></div>
+</div>
+
+<!-- MY EDUCATION JOURNEY -->
+<section class="section section-card">
+  <h2>My <span class="yellow">Education Journey</span></h2>
+
+  <div class="education-box">
+<!-- TABIK KEMAS -->
+    <div class="edu-card">
+  <div class="edu-left">
+
+    <a href="https://www.facebook.com/groups/109734829042669/?ref=share&mibextid=NSMWBT"
+       target="_blank"
+       class="edu-logo-link">
+
+      <div class="edu-logo-box">
+        <img src="school1.png" alt="Tabika KEMAS">
+      </div>
+
+    </a>
+
+    <h3>Tabika KEMAS</h3>
+    <p class="edu-year">2010 – 2011</p>
+  </div>
+
+  <div class="edu-right">
+    <iframe
+      src="https://www.google.com/maps?q=Tabika+Kemas+Taman+Sentosa&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+
+    <!-- SEKOLAH RENDAH -->
+    <div class="edu-card">
+  <div class="edu-left">
+
+    <a href="https://www.facebook.com/share/1FqEC86iZC/"
+       target="_blank"
+       class="edu-logo-link">
+
+      <div class="edu-logo-box">
+        <img src="school2.png" alt="SK Taman Klang Jaya">
+      </div>
+
+    </a>
+
+    <h3>Sekolah Kebangsaan Taman Klang Jaya</h3>
+    <p class="edu-year">2012 – 2017</p>
+  </div>
+
+  <div class="edu-right">
+    <iframe
+      src="https://www.google.com/maps?q=Sekolah+Kebangsaan+Taman+Klang+Jaya&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+<!-- SEKOLAH MENENGAH -->
+<div class="edu-card">
+  <div class="edu-left">
+
+    <a href="https://www.facebook.com/share/17jDok5mqU/"
+       target="_blank"
+       class="edu-logo-link">
+
+      <div class="edu-logo-box">
+        <img src="school3.png" alt="SAMTiSH">
+      </div>
+
+    </a>
+
+    <h3>Sekolah Agama Menengah Tinggi Sultan Hisamuddin</h3>
+    <p class="edu-year">2018 – 2022</p>
+  </div>
+
+  <div class="edu-right">
+    <iframe
+      src="https://www.google.com/maps?q=SAMT+Sultan+Hisamuddin&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+    
+<!-- UITM -->
+<div class="edu-card">
+  <div class="edu-left">
+
+    <a href="https://www.facebook.com/share/1Bj6zdDfmq/"
+       target="_blank"
+       class="edu-logo-link">
+
+      <div class="edu-logo-box">
+        <img src="school4.png" alt="UiTM">
+      </div>
+
+    </a>
+
+    <h3>Universiti Teknologi MARA (UiTM)</h3>
+    <p class="edu-year">2023 – 2026</p>
+  </div>
+
+  <div class="edu-right">
+    <iframe
+      src="https://www.google.com/maps?q=Universiti+Teknologi+MARA+Cawangan+Johor+Kampus+Segamat&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+   
+
+
+<footer>
+    <p>© 2025 Muhammad Fakhrullah | Education</p>
+</footer>
+
+<!-- LIVE TIME SCRIPT -->
+<script>
+function updateTime() {
+    const now = new Date();
+    document.getElementById("liveTime").textContent =
+        now.toLocaleTimeString("en-US", { hour12: true });
+}
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+</body>
+</html>
