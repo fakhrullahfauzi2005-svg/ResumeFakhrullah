@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata | Muhammad Fakhrullah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FIXED MARQUEE -->
+<div class="top-marquee fixed-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        Welcome to My Website • Muhammad Fakhrullah • Information Management Student
+    </marquee>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Fakhrullah</div>
+    <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="biodata.html" class="active">Biodata</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="section" style="margin-top:170px;">
+    <h2>My <span class="yellow">Biodata</span></h2>
+
+    <!-- PROFILE IMAGE -->
+    <div style="text-align:center; margin-bottom:25px;">
+        <img src="myphoto.jpeg" 
+             style="width:250px; height:250px; border-radius:50%; object-fit:cover;
+                    border:3px solid #f7c325; box-shadow:0 12px 35px rgba(0,0,0,0.55);" />
+    </div>
+
+    <!-- PERSONAL INFO -->
+    <div class="large-card" style="max-width:700px; transition:0.3s;">
+        <h2>Personal <span class="yellow">Information</span></h2>
+        <div class="about-text" style="max-width:550px; margin:auto;">
+            <div class="bio-line">• Name: Muhammad Fakhrullah Bin Muhamad Fauzi</div>
+            <div class="bio-line">• Age: 20 Years Old</div>
+            <div class="bio-line">• Place of Birth: Selangor</div>
+            <div class="bio-line">• Language: Malay, English, Basic Arabic</div>
+        </div>
+    </div>
+
+    <!-- PERSONALITY -->
+    <div class="large-card" style="max-width:700px; transition:0.3s;">
+        <h2>My <span class="yellow">Personality</span></h2>
+
+        <div class="about-text" style="max-width:550px; margin:auto;">
+            <div class="bio-line">1.Responsible: Focused • Reliable • Consistent</div>
+            <div class="bio-line">2.Creative: Imaginative • Innovative • Ideas</div>
+            <div class="bio-line">3.Friendly: Approachable • Warm • Respectful</div>
+            <div class="bio-line">4.Curious: Explorer • Thinker • Learner</div>
+            <div class="bio-line">5.Calm: Balanced • Composed • Steady</div>
+        </div>
+    </div>
+
+    <!-- SOFT SKILLS (4 only, with emojis) -->
+    <section class="section section-card">
+  <h2>Soft <span class="yellow">Skills</span></h2>
+
+  <div class="skill-progress">
+
+    <p>💬 Communication <span>94%</span></p>
+    <div class="bar"><div class="fill" data-percent="94"></div></div>
+
+    <p>🤝 Teamwork <span>93%</span></p>
+    <div class="bar"><div class="fill" data-percent="93"></div></div>
+
+    <p>🧠 Problem Solving <span>96%</span></p>
+    <div class="bar"><div class="fill" data-percent="96"></div></div>
+
+    <p>⏱️ Time Management <span>95%</span></p>
+    <div class="bar"><div class="fill" data-percent="95"></div></div>
+
+  </div>
+</section>
+
+    <!-- INTERESTS & HOBBIES -->
+    <div class="large-card">
+        <h2>Interests & <span class="yellow">Hobbies</span></h2>
+
+        <div class="movie-grid big-grid" style="grid-template-columns:repeat(3,1fr);">
+
+            <div class="movie-card" style="padding:20px;">
+                <div style="font-size:45px; margin-bottom:10px;">📚</div>
+                <p><strong>Reading</strong></p>
+                <p style="font-size:14px; color:#ccc;">I enjoy gaining new knowledge and ideas.</p>
+            </div>
+
+            <div class="movie-card" style="padding:20px;">
+                <div style="font-size:45px; margin-bottom:10px;">🎮</div>
+                <p><strong>Gaming</strong></p>
+                <p style="font-size:14px; color:#ccc;">I enjoy playing games to relax and improve focus.</p>
+            </div>
+
+            <div class="movie-card" style="padding:20px;">
+                <div style="font-size:45px; margin-bottom:10px;">🚶‍♂️</div>
+                <p><strong>Outdoor Activities</strong></p>
+                <p style="font-size:14px; color:#ccc;">Hiking and exploring peaceful places.</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Muhammad Fakhrullah | Biodata</p>
+</footer>
+
+<!-- LIVE TIMER -->
+<div class="live-timer-widget" id="liveTimer"></div>
+
+<script>
+function updateTime() {
+    const now = new Date();
+    const t = now.toLocaleTimeString("en-US", {
+        hour:"numeric", minute:"numeric", second:"numeric", hour12:true
+    });
+    document.getElementById("liveTimer").innerHTML = t;
+}
+setInterval(updateTime, 1000); updateTime();
+</script>
+<script>
+const bars = document.querySelectorAll('.fill');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      const percent = entry.target.dataset.percent;
+      entry.target.style.width = percent + '%';
+    }
+  });
+},{threshold:0.4});
+
+bars.forEach(bar => observer.observe(bar));
+</script>
+
+</body>
+</html>
